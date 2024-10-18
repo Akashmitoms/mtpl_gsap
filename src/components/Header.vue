@@ -7,7 +7,7 @@
        <div class="nav2">
               <ul>
                 <li>COMMUNITY</li>
-                <li>EXPLORE</li>
+                <router-link to="ourServices"><li>Our Services </li></router-link>
                 <li>FEATURES</li>
                 <li>BLOG</li>
                 <li>ABOUT</li>
@@ -20,6 +20,10 @@
 </template>
 
 <style scoped>
+a{
+    text-decoration: none;
+    color: white;
+}
 header{
     display: flex;
     justify-content: space-between;

@@ -162,6 +162,20 @@
         </div>
       </div>
     </div>
+    <section class="common_padding">
+      <div class="sec2">
+        <div class="sec2a">
+          <h2>Discovery The World</h2>
+          <p>Feugiat hendrerit cubilia curae ultricies vivamus nisl quisque viverra, praesent faucibus.</p>
+        </div>
+        <div class="sec2b">
+          <img src="/image/world1.jpg" alt="" />
+          <img src="/image/world2.jpg" alt="" />
+          <img src="/image/world3.jpg" alt="" />
+      
+        </div>
+      </div>
+    </section>
   </article>
 </template>
 
@@ -288,5 +302,81 @@ nav p:hover {
   font-size: 1.2rem;
   font-weight: 700;
   opacity: 0.7;
+}
+.common_padding{
+  padding: 2% 5% 5% 10%;
+}
+.sec2{
+  display: flex; 
+}
+.sec2a{
+  width: 40%;
+}
+.sec2b{
+  width: 60%;
+  display: flex;
+  gap: 1%;
+  justify-content: space-evenly;
+}
+.sec2 img{
+  width: 30%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.sec2 h2{
+  font-size: 3rem;
+  font-weight: 900;
+  margin: 5% 0;
+}
+.sec2 p{
+  font-size: 1.2rem;
+  font-weight: 700;
+  opacity: 0.7;
+}
+@media screen and (max-width: 1200px) and (min-width: 700px) {
+  .graphic_con{
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .sub_con{
+    width: 100%;
+  }
+  .sub_con1{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .graphic_con{
+    margin-top: 2rem;
+    padding: 2%;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .sub_con{
+    width: 100%;
+    gap: 0.5rem;
+  }
+  .sub_con h2{
+    font-size: 2rem;
+  }
+  .sub_con1{
+    width: 100%;
+    height: auto;
+  }
+  header h1{
+    font-size: 1.6rem;
+  }
+  nav p{
+    font-size: 1rem;
+  }
+  .sec2{
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .sec2a, .sec2b{
+    width: 100%;
+  }
+  
 }
 </style>

@@ -60,14 +60,19 @@
     </div>
 </div>
   </section>
+  <HomeComponent/>
 </template>
 
 <script>
+import HomeComponent from "./HomeComponent.vue";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
 export default {
   name: "Home",
+  components: {
+    HomeComponent,
+  },
 
   methods:{
     sideScroll(){
@@ -110,7 +115,6 @@ body{
 }
 .sec1 {
   width: 100%;
-  height: 95vh;
   position: relative;
 }
 img {
@@ -199,9 +203,34 @@ img {
     font-weight: 500;
     opacity: 0.8;
 }
-@media screen and (max-width: 640px) {
-  /* .sec1 img{
-    object-fit: contain;
-  } */
+@media screen and (max-width: 1200px) and (min-width: 701px) {
+  .sec_head h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  .image{
+    width: 50px;
+    padding: 0.5rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .sec1_con h1{
+    font-size: 1.8rem;
+  }
+  .sec1_con p{
+    font-size: 1rem;
+  }
+  .sec2{
+    flex-direction: column;
+  }
+  .sec_head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2% 5%;
+  }
+  .v_line{
+    display: none;
+  }
 }
 </style>
