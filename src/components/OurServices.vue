@@ -1,5 +1,5 @@
 <template>
-    <section class="section1">
+  <section class="section1">
     <div class="sec1">
       <img src="/image/hero.jpg" alt="" />
       <div class="sec1_con">
@@ -30,72 +30,178 @@
     </container>
   </section>
   <section class="section2">
-  <div class="sec3 " >
-    <div class="head">
-    <h5>Laoreet aenean aliquam est</h5>
-    <h1>Eros id fames ultricies</h1>
-    <p>purus magna metus molestie risus congue nam, mus sapien mattis quam iaculis ullamcorper curabitur</p>
-    </div>
-    <div class="container3">
+    <div class="sec3">
+      <div class="head">
+        <h5>Laoreet aenean aliquam est</h5>
+        <h1>Eros id fames ultricies</h1>
+        <p>
+          purus magna metus molestie risus congue nam, mus sapien mattis quam
+          iaculis ullamcorper curabitur
+        </p>
+      </div>
+      <div class="container3">
         <div class="sec3a">
-            <span><font-awesome-icon :icon="['fas', 'pen-nib']" /></span>
-            <h2>Ultrices conubia</h2>
-            <p>Leo suspendisse quisque nisi gravida dignissim libero urna velit ligula sed, mus consequat natoque cursus congue nunc</p>
+          <span><font-awesome-icon :icon="['fas', 'pen-nib']" /></span>
+          <h2>Ultrices conubia</h2>
+          <p>
+            Leo suspendisse quisque nisi gravida dignissim libero urna velit
+            ligula sed, mus consequat natoque cursus congue nunc
+          </p>
         </div>
         <div class="sec3a">
           <span><font-awesome-icon :icon="['fas', 'microchip']" /></span>
-            <h2>Ultrices conubia</h2>
-            <p>Leo suspendisse quisque nisi gravida dignissim libero urna velit ligula sed, mus consequat natoque cursus congue nunc</p>
+          <h2>Ultrices conubia</h2>
+          <p>
+            Leo suspendisse quisque nisi gravida dignissim libero urna velit
+            ligula sed, mus consequat natoque cursus congue nunc
+          </p>
         </div>
         <div class="sec3a">
           <span><font-awesome-icon :icon="['fas', 'people-group']" /></span>
-            <h2>Ultrices conubia</h2>
-            <p>Leo suspendisse quisque nisi gravida dignissim libero urna velit ligula sed, mus consequat natoque cursus congue nunc</p>
-        </div>
-    </div>
-  </div>
-</section>
-<section class="section2">
-  <div class="sec4">
-    <div class="head">
-      <h1>Lorem ipsum dolor sit amet</h1>
-      <p>Curabitur consequat nam sed mauris iaculis ridiculus fames placerat interdum dignissim lobortis quisque</p>
-    </div>
-    <div class="container_sec4">
-      <div class="sec4_con">
-        <div class="sec4_con1">
-          <span><font-awesome-icon :icon="['fas', 'feather']" /></span>
-          <h2>Eget commodo hac</h2>
-          <p>Nisi potenti facilisis integer vehicula faucibus blandit risus ad, per vulputate lacus</p>
-        </div>
-        <div class="sec4_con2">
-          <ul>
-            <li>Non sociis lobortis orci</li>
-            <li>Auctor posuere mattis egestas</li>
-            <li>Non sociis lobortis orci</li>
-            <li>Auctor posuere mattis egestas</li>
-          </ul>
+          <h2>Ultrices conubia</h2>
+          <p>
+            Leo suspendisse quisque nisi gravida dignissim libero urna velit
+            ligula sed, mus consequat natoque cursus congue nunc
+          </p>
         </div>
       </div>
-      <div class="sec4_con_a">
-        <div class="sec4_con1">
-          <span><font-awesome-icon :icon="['fas', 'feather']" /></span>
-          <h2>Eget commodo hac</h2>
-          <p>Nisi potenti facilisis integer vehicula faucibus blandit risus ad, per vulputate lacus</p>
+    </div>
+  </section>
+  <section class="section2">
+    <div class="sec4">
+      <div class="head">
+        <h1>Lorem ipsum dolor sit amet</h1>
+        <p>
+          Curabitur consequat nam sed mauris iaculis ridiculus fames placerat
+          interdum dignissim lobortis quisque
+        </p>
+      </div>
+      <div class="container_sec4">
+        <div class="sec4_con">
+          <div class="sec4_con1">
+            <span><font-awesome-icon :icon="['fas', 'feather']" /></span>
+            <h2>Eget commodo hac</h2>
+            <p>
+              Nisi potenti facilisis integer vehicula faucibus blandit risus ad,
+              per vulputate lacus
+            </p>
+          </div>
+          <div class="sec4_con2">
+            <ul>
+              <li>
+                <span class="tick"
+                  ><font-awesome-icon :icon="['fas', 'check']"
+                /></span>
+                Non sociis lobortis orci
+              </li>
+              <li>
+                <span class="tick"
+                  ><font-awesome-icon :icon="['fas', 'check']" /></span
+                >Auctor posuere mattis egestas
+              </li>
+              <li>
+                <span class="tick"
+                  ><font-awesome-icon :icon="['fas', 'check']" /></span
+                >Augue eleifend, tempor aenean
+              </li>
+              <li>
+                <span class="tick"
+                  ><font-awesome-icon :icon="['fas', 'check']" /></span
+                >Mauris laoreet vitae dis
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="sec4_con2">
-          <ul>
-            <li>Non sociis lobortis orci</li>
-            <li>Auctor posuere mattis egestas</li>
-            <li>Non sociis lobortis orci</li>
-            <li>Auctor posuere mattis egestas</li>
-          </ul>
+        <div class="sec4_con_a">
+          <div class="sec4_con1">
+            <span><font-awesome-icon :icon="['fas', 'feather']" /></span>
+            <h2>Eget commodo hac</h2>
+            <p>
+              Nisi potenti facilisis integer vehicula faucibus blandit risus ad,
+              per vulputate lacus
+            </p>
+          </div>
+          <div class="sec4_con2">
+            <ul>
+              <li><span class="tick_a"
+                  ><font-awesome-icon :icon="['fas', 'check']"
+                /></span>Non sociis lobortis orci</li>
+              <li><span class="tick_a"
+                  ><font-awesome-icon :icon="['fas', 'check']"
+                /></span>Auctor posuere mattis egestas</li>
+              <li><span class="tick_a"
+                  ><font-awesome-icon :icon="['fas', 'check']"
+                /></span>Non sociis lobortis orci</li>
+              <li><span class="tick_a"
+                  ><font-awesome-icon :icon="['fas', 'check']"
+                /></span>Auctor posuere mattis egestas</li>
+            </ul>
+          </div>
+        </div>
+        <div class="sec4_con">
+          <div class="sec4_con1">
+            <span><font-awesome-icon :icon="['fas', 'feather']" /></span>
+            <h2>Eget commodo hac</h2>
+            <p>
+              Nisi potenti facilisis integer vehicula faucibus blandit risus ad,
+              per vulputate lacus
+            </p>
+          </div>
+          <div class="sec4_con2">
+            <ul>
+              <li>
+                <span class="tick"
+                  ><font-awesome-icon :icon="['fas', 'check']"
+                /></span>
+                Non sociis lobortis orci
+              </li>
+              <li>
+                <span class="tick"
+                  ><font-awesome-icon :icon="['fas', 'check']" /></span
+                >Auctor posuere mattis egestas
+              </li>
+              <li>
+                <span class="tick"
+                  ><font-awesome-icon :icon="['fas', 'check']" /></span
+                >Augue eleifend, tempor aenean
+              </li>
+              <li>
+                <span class="tick"
+                  ><font-awesome-icon :icon="['fas', 'check']" /></span
+                >Mauris laoreet vitae dis
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="sec4_con_a">
+          <div class="sec4_con1">
+            <span><font-awesome-icon :icon="['fas', 'feather']" /></span>
+            <h2>Eget commodo hac</h2>
+            <p>
+              Nisi potenti facilisis integer vehicula faucibus blandit risus ad,
+              per vulputate lacus
+            </p>
+          </div>
+          <div class="sec4_con2">
+            <ul>
+              <li><span class="tick_a"
+                  ><font-awesome-icon :icon="['fas', 'check']"
+                /></span>Non sociis lobortis orci</li>
+              <li><span class="tick_a"
+                  ><font-awesome-icon :icon="['fas', 'check']"
+                /></span>Auctor posuere mattis egestas</li>
+              <li><span class="tick_a"
+                  ><font-awesome-icon :icon="['fas', 'check']"
+                /></span>Non sociis lobortis orci</li>
+              <li><span class="tick_a"
+                  ><font-awesome-icon :icon="['fas', 'check']"
+                /></span>Auctor posuere mattis egestas</li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div class="sec4_con"></div>
     </div>
-  </div>
-</section>
+  </section>
 </template>
 
 <style scoped>
@@ -161,34 +267,34 @@ img {
   background-color: lightgrey;
   margin-top: 1%;
 }
-.head{
-   display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.head h5{
-    font-size: 1.2rem;
-    font-weight: 500;
-    color: grey;
+.head h5 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: grey;
 }
-.head h1{
-    font-size: 3rem;
-    font-weight: 900;
-    margin: 2rem 0;
+.head h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin: 2rem 0;
 }
-.head p{
-    font-size: 1.2rem;
-    font-weight: 500;
-    color: grey;
-    margin: 1rem 0;
+.head p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: grey;
+  margin: 1rem 0;
 }
-.container3{
-    display: flex;
-    justify-content: space-evenly;
-    margin: 2rem 0;
+.container3 {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2rem 0;
 }
-.sec3a{
+.sec3a {
   width: 30%;
   background-color: whitesmoke;
   border-radius: 10px;
@@ -198,65 +304,107 @@ img {
   justify-content: center;
   align-items: start;
   padding: 2%;
-
 }
-span{
-    font-size: 2rem;
-    color: white;
-    margin: 1rem 0;
-    padding: 1.2rem;
-    background-color:#F96227;
-    border-radius: 50%;
+span {
+  font-size: 2rem;
+  color: white;
+  margin: 1rem 0;
+  padding: 1.2rem;
+  background-color: #f96227;
+  border-radius: 50%;
 }
-.sec3a h2{
-    font-size: 2rem;
-    font-weight: 700;
-    margin: 1rem 0;
+.sec3a h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 1rem 0;
 }
-.sec3a p{
-    font-size: 1.2rem;
-    font-weight: 500;
-    color: grey;
-    margin: 1rem 0;
+.sec3a p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: grey;
+  margin: 1rem 0;
 }
-.sec4_con{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding:0 10%;
+.sec4_con {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+  margin: 2% 0;
 }
-.sec4_con1, .sec4_con2{
-    width: 50%;
-    padding: 2%;
+.sec4_con1,
+.sec4_con2 {
+  width: 50%;
+  padding: 2%;
 }
-.sec4_con2{
-    background-color:#1D2A34;
-    border-radius: 10px;
-    padding: 5% 2%;
+.sec4_con2 {
+  background-color: #1d2a34;
+  border-radius: 10px;
+  padding: 5% 2%;
 }
-.sec4_con2 ul{
-    list-style: none;
-    padding: 1rem;
+.sec4_con2 ul {
+  list-style: none;
+  padding: 1rem;
 }
-.sec4_con2 li{
-    font-size: 1.4rem;
-    font-weight: 500;
-    color: white;
-    margin: 1.5rem 0;
+.sec4_con2 li {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: white;
 }
-.sec4_con1 h2{
-    font-size: 2rem;
-    font-weight: 700;
-    margin: 2rem 0;
+.sec4_con1 h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 2rem 0;
 }
-.sec4_con1 p{
-    font-size: 1.2rem;
-    font-weight: 500;
-    color: grey;
-    margin: 1rem 0;
+.sec4_con1 p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: grey;
+  margin: 1rem 0;
 }
-.sec4_con_a{
+.sec4_con_a {
   display: flex;
   flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+  margin: 2% 0;
+}
+.tick {
+  display: inline-block;
+  color: #1d2a34;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  margin-bottom: 0.3rem;
+  padding: 0.8rem;
+  background-color: white;
+}
+.tick_a{
+  display: inline-block;
+  color: white;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  margin-bottom: 0.3rem;
+  padding: 0.8rem;
+  background-color: #f96227;
+}
+@media screen and (max-width: 1200px) {
+  .sec3a {
+    width: 100%;
+  }
+  .container3 {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .sec4_con {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .sec4_con_a {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .sec4_con1, .sec4_con2 {
+    width: 100%;
+  }
 }
 </style>

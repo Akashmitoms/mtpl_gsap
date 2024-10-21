@@ -6,9 +6,9 @@
        </div>
        <div class="nav2">
               <ul>
-                <li>COMMUNITY</li>
-                <router-link to="ourServices"><li>Our Services </li></router-link>
-                <li>FEATURES</li>
+                
+                <router-link to="/ourServices"><li>Our Services </li></router-link>
+                <router-link to="/portfolio"><li>Portfolios </li></router-link>
                 <li>BLOG</li>
                 <li>ABOUT</li>
               </ul>
@@ -25,6 +25,7 @@ a{
     color: white;
 }
 header{
+    background-color: #1D2A34;
     display: flex;
     justify-content: space-between;
     align-items: center;
