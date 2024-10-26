@@ -6,11 +6,13 @@
        </div>
        <div class="nav2">
               <ul>
-                
-                <router-link to="/ourServices"><li>Our Services </li></router-link>
-                <router-link to="/portfolio"><li>Portfolios </li></router-link>
+                <router-link to="/"><li>HOME </li></router-link>
+                <router-link to="/aboutUs"><li>ABOUT US </li></router-link>
+                <router-link to="/ourServices"><li>SERVICES </li></router-link>
+                <router-link to="/portfolio"><li>SOLUTIONS </li></router-link>
+                <li>CASE STUDIES</li>
                 <li>BLOG</li>
-                <li>ABOUT</li>
+                
               </ul>
        </div>
        <div class="nav3">
@@ -25,7 +27,7 @@ a{
     color: white;
 }
 header{
-    background-color: #1D2A34;
+    /* background-color: #1D2A34; */
     display: flex;
     justify-content: space-between;
     align-items: center;

@@ -3,11 +3,11 @@
     <div class="sec1">
       <img src="/image/hero.jpg" alt="" />
       <div class="sec1_con">
-        <h1>INNOVATING IDEAS</h1>
+        <h1>Empowering Businesses with Digital Excellence</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipiscing elit, gravida morbi
-          lacus pulvinar libero litora elementum urna
+          Innovative Web and Mobile Solutions to Drive Growth and Connectivity
         </p>
+        <button class="btn">Get a Free Consultation</button>
       </div>
     </div>
   </section>
@@ -31,36 +31,41 @@
   </section>
   <section class="section_pin">
     <div class="sec3_container">
-    <div class="sec3a">
-      <h2>Vision</h2>
-      <h1>Identity <br> Development</h1>
-      <p>
-        Magna enim lobortis laoreet id cras ad tincidunt aliquam, quisque
-        torquent posuere facilisis mus nisi velit, mattis vehicula sociis nullam
-        penatibus eros nunc.
-      </p>
+      <div class="sec3a">
+        <h2>Our Vision</h2>
+        <h1>Shaping the Future with Cutting-Edge Technology</h1>
+        <p>
+          Our vision is to make technology accessible and empowering for
+          everyone, regardless of background or business size. We aim to drive
+          digital transformation by providing innovative and tailored solutions
+          that help people and businesses unlock their full potential.
+        </p>
+      </div>
+      <div class="sec3b">
+        <h2>Our Mission</h2>
+        <h1>Empower Businesses Through Innovative Web and Mobile Solutions</h1>
+        <p>
+          To empower businesses through innovative web and mobile solutions that
+          drive growth, efficiency, and connectivity. By harnessing the power of
+          leading-edge technologies, we deliver custom, user-centric
+          applications that transform the digital experience
+        </p>
+      </div>
+      <div class="sec3c">
+        <h2>Our Values</h2>
+        <h1>
+          Our core values paint a comprehensive picture of our organization.
+        </h1>
+        <p>
+          Our vision is to make technology accessible and empowering for
+          everyone, regardless of background or business size. We aim to drive
+          digital transformation by providing innovative and tailored solutions
+          that help people and businesses unlock their full potential.
+        </p>
+      </div>
     </div>
-    <div class="sec3b">
-        <h2>Mission</h2>
-      <h1>Identity <br> Development</h1>
-      <p>
-        Magna enim lobortis laoreet id cras ad tincidunt aliquam, quisque
-        torquent posuere facilisis mus nisi velit, mattis vehicula sociis nullam
-        penatibus eros nunc.
-      </p>
-    </div>
-    <div class="sec3c">
-        <h2>values</h2>
-      <h1>Identity <br> Development</h1>
-      <p>
-        Magna enim lobortis laoreet id cras ad tincidunt aliquam, quisque
-        torquent posuere facilisis mus nisi velit, mattis vehicula sociis nullam
-        penatibus eros nunc.
-      </p>
-    </div>
-</div>
   </section>
-  <HomeComponent/>
+  <HomeComponent />
 </template>
 
 <script>
@@ -74,23 +79,21 @@ export default {
     HomeComponent,
   },
 
-  methods:{
-    sideScroll(){
-      gsap.to(".sec3_container",{
-        transform: 'translateX(-120%)',
+  methods: {
+    sideScroll() {
+      gsap.to(".sec3_container", {
+        transform: "translateX(-120%)",
         delay: 1,
-       scrollTrigger: {
+        scrollTrigger: {
           trigger: ".section_pin",
           markers: true,
           start: "top 0%",
           end: "bottom 0%",
           scrub: 1,
           pin: true,
-       }
-       
-         
-      })
-    }
+        },
+      });
+    },
   },
   mounted() {
     gsap.registerPlugin(ScrollTrigger);
@@ -100,7 +103,7 @@ export default {
 </script>
 
 <style scoped>
-body{
+body {
   overflow-x: hidden;
 }
 .section1 {
@@ -125,7 +128,7 @@ img {
 }
 .sec1_con {
   position: absolute;
-  top: 45%;
+  top: 38%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -136,10 +139,12 @@ img {
   font-weight: 700;
 }
 .sec1_con p {
+  margin: 7% 0;
   font-size: 1.5rem;
   font-weight: 500;
   opacity: 0.8;
 }
+
 .sec2 {
   display: flex;
   justify-content: space-evenly;
@@ -171,65 +176,67 @@ img {
   background-color: lightgrey;
   margin-top: 1%;
 }
-.sec3a, .sec3b, .sec3c {
-    width: 99vw;
-    padding: 10%;
-    margin: 1%;
-    border-radius: 20px;
+.sec3a,
+.sec3b,
+.sec3c {
+  width: 99vw;
+  padding: 7% 1% 2% 5%;
+  margin: 1%;
+  border-radius: 20px;
 }
-.sec3b{
-    background-color: #1D2A34;
+.sec3b {
+  background-color: #1d2a34;
 }
-.sec3c{
-    background-color: #F96227;
+.sec3c {
+  background-color: #f96227;
 }
 .sec3_container {
-    display: flex;
+  display: flex;
 }
 .sec3_container h2 {
-    font-size: 1.8rem;
-    font-weight: 700;
-    font-family: Arial, Helvetica, sans-serif;
-    opacity: 0.7;
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  opacity: 0.7;
 }
 .sec3_container h1 {
-    font-size: 5rem;
-    font-weight: 700;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 5% 0;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 5% 0;
 }
 .sec3_container p {
-    font-size: 1.5rem;
-    font-weight: 500;
-    opacity: 0.8;
+  font-size: 1.5rem;
+  font-weight: 500;
+  opacity: 0.8;
 }
 @media screen and (max-width: 1200px) and (min-width: 701px) {
   .sec_head h2 {
     font-size: 1.5rem;
     font-weight: 500;
   }
-  .image{
+  .image {
     width: 50px;
     padding: 0.5rem;
   }
 }
 @media screen and (max-width: 700px) {
-  .sec1_con h1{
+  .sec1_con h1 {
     font-size: 1.8rem;
   }
-  .sec1_con p{
+  .sec1_con p {
     font-size: 1rem;
   }
-  .sec2{
+  .sec2 {
     flex-direction: column;
   }
-  .sec_head{
+  .sec_head {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 2% 5%;
   }
-  .v_line{
+  .v_line {
     display: none;
   }
 }
