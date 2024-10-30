@@ -1,7 +1,7 @@
 <template>
   <section class="section1">
     <div class="os1">
-      <img src="/image/hero.jpg" alt="" />
+      <img src="\image\mitoms\lee-campbell-DtDlVpy-vvQ-unsplash.jpg" alt="" />
       <div class="os1_con">
         <h1>Innovative IT Solutions for Every Business</h1>
         <p>
@@ -57,7 +57,7 @@
       <div class="container_os3">
         <div class="os3_con">
           <div class="os3_con1">
-            <span><font-awesome-icon :icon="['fas', 'feather']" /></span>
+            <span><font-awesome-icon :icon="['fas', 'laptop-code']" /></span>
             <h2>Web Development</h2>
             <p>
               We create high-performance, responsive websites and custom web
@@ -76,7 +76,7 @@
         </div>
         <div class="os3_con_a">
           <div class="os3_con1">
-            <span><font-awesome-icon :icon="['fas', 'feather']" /></span>
+            <span><font-awesome-icon :icon="['fas', 'mobile-screen']" /></span>
             <h2>Mobile Application Development</h2>
             <p>
               We develop user-friendly, high-performance mobile apps for iOS and
@@ -95,7 +95,7 @@
         </div>
         <div class="os3_con">
           <div class="os3_con1">
-            <span><font-awesome-icon :icon="['fas', 'feather']" /></span>
+            <span><font-awesome-icon :icon="['fas', 'gears']" /></span>
             <h2>Custom Software Solutions</h2>
             <p>
               We deliver customized software solutions that address your
@@ -115,7 +115,7 @@
         </div>
         <div class="os3_con_a">
           <div class="os3_con1">
-            <span><font-awesome-icon :icon="['fas', 'feather']" /></span>
+            <span><font-awesome-icon :icon="['fas', 'circle-nodes']" /></span>
             <h2>Intuitive UI/UX Design</h2>
             <p>
               We create intuitive and visually appealing UI/UX designs through
@@ -134,7 +134,7 @@
         </div>
         <div class="os3_con">
           <div class="os3_con1">
-            <span><font-awesome-icon :icon="['fas', 'feather']" /></span>
+            <span><font-awesome-icon :icon="['fas', 'magnifying-glass-chart']" /></span>
             <h2>SEO and Digital Marketing</h2>
             <p>
               We provide full-service SEO and digital marketing to boost your
@@ -151,7 +151,7 @@
         </div>
         <div class="os3_con_a">
           <div class="os3_con1">
-            <span><font-awesome-icon :icon="['fas', 'feather']" /></span>
+            <span><font-awesome-icon :icon="['fas', 'at']" /></span>
             <h2>E-Commerce Solutions</h2>
             <p>
               We develop e-commerce platforms that ensure seamless shopping
@@ -190,15 +190,20 @@ img {
 }
 .os1_con {
   position: absolute;
-  top: 45%;
+  top: 15%;
   left: 50%;
-  transform: translate(-50%, -50%);
+ /* transform: translate(-50%, -50%); */
   text-align: center;
   color: white;
+  /* background-color: #1D2A34;
+  opacity: 0.7;
+  border-radius: 20px; */
 }
 .os1_con h1 {
   font-size: 5vw;
   font-weight: 700;
+  opacity: 1;
+  z-index: 2;
 }
 .os1_con p {
   font-size: 3.2vw;
@@ -298,7 +303,7 @@ span {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5% 10%;
+  padding: 0 10%;
   margin: 5% 0;
 }
 .os3_con1,
@@ -343,7 +348,7 @@ span {
   flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
-  padding: 5% 10%;
+  padding: 0 10%;
   margin: 2% 0;
 }
 .tick {

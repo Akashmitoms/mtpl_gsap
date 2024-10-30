@@ -1,9 +1,10 @@
 <template>
   <section class="section1">
     <div class="sec1">
-      <img src="/image/hero.jpg" alt="" />
+      <img src="\image\mitoms\randa-marzouk-ilwI-AIAQr4-unsplash.jpg" alt="" />
+      <!-- <img src="\image\mitoms\jakub-zerdzicki-sKhzb1uyBDU-unsplash.jpg" alt="" /> -->
       <div class="sec1_con">
-        <h1>Empowering Businesses with Digital Excellence</h1>
+        <h1>Empowering Businesses <br> with Digital Excellence</h1>
         <p>
           Innovative Web and Mobile Solutions to Drive Growth and Connectivity
         </p>
@@ -14,7 +15,7 @@
   <section class="section2">
     <container class="sec2">
       <div class="sec_head">
-        <img class="image" src="/image/digital-printing.png" alt="" />
+        <img class="image" src="\image\icons\icons8-design-100.png" alt="" />
         <h2>DESIGN</h2>
       </div>
       <div class="v_line"></div>
@@ -119,12 +120,14 @@ body {
 .sec1 {
   width: 100%;
   position: relative;
+  z-index: 1;
 }
 img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 20px;
+  z-index: -1;
 }
 .sec1_con {
   position: absolute;
@@ -133,9 +136,10 @@ img {
   transform: translate(-50%, -50%);
   text-align: center;
   color: white;
+  margin-top: 3%;
 }
 .sec1_con h1 {
-  font-size: 3rem;
+  font-size: 4vw;
   font-weight: 700;
 }
 .sec1_con p {
@@ -222,10 +226,14 @@ img {
 }
 @media screen and (max-width: 700px) {
   .sec1_con h1 {
-    font-size: 1.8rem;
+    font-size: 5vw;
+    white-space: nowrap;
   }
   .sec1_con p {
-    font-size: 1rem;
+    font-size: 3.4vw;
+  }
+  .btn {
+    font-size: 2.8vw;
   }
   .sec2 {
     flex-direction: column;

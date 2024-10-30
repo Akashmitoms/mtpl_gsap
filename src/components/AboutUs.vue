@@ -1,7 +1,7 @@
 <template>
   <section class="section1">
     <div class="ab1">
-      <img src="/image/hero.jpg" alt="" />
+      <img src="\image\img 3.png" alt="" />
       <div class="ab1_con">
         <h1>
           Welcome to Mitoms Technologies: <br /><span class="span_ab1"

@@ -20,10 +20,11 @@
     font-size: 1.2rem;
     font-weight: 600;
     cursor: pointer;
+    border: 2px solid #f96227;
   }
   .btn:hover {
     background-color: transparent;
-    border: 2px solid #f96227;
+    
   }
   .common_padding {
     padding: 2% 5% 5% 10%;

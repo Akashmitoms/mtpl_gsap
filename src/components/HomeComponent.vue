@@ -5,9 +5,9 @@
   </header>
   <article>
     <nav>
-      <p @click="activeDesign">DESIGN</p>
-      <p @click="activeTechnology">TECHNOLOGY</p>
-      <p @click="activeBusiness">BUSINESS</p>
+      <p :class="{active: design}" @click="activeDesign">DESIGN</p>
+      <p :class="{active: technology}" @click="activeTechnology">TECHNOLOGY</p>
+      <p :class="{active: business}" @click="activeBusiness">BUSINESS</p>
     </nav>
     <div class="graphic_container" v-if="design">
       <div class="graphic_con">
@@ -24,7 +24,7 @@
           </h6>
         </div>
         <div class="sub_con1">
-          <img src="/image/image11.jpg" alt="" />
+          <img src="/image/img 1.png" alt="" />
         </div>
       </div>
       <div class="graphic_con">
@@ -41,7 +41,7 @@
           </h6>
         </div>
         <div class="sub_con1">
-          <img src="/image/image12.jpg" alt="" />
+          <img src="\image\mitoms\pete-pedroza-xITnxxlzGAE-unsplash.jpg" alt="" />
         </div>
       </div>
       <div class="graphic_con">
@@ -58,7 +58,7 @@
           </h6>
         </div>
         <div class="sub_con1">
-          <img src="/image/image13.jpg" alt="" />
+          <img src="/image/img 3.png" alt="" />
         </div>
       </div>
     </div>
@@ -77,7 +77,7 @@
           </h6>
         </div>
         <div class="sub_con1">
-          <img src="/image/image21.jpg" alt="" />
+          <img src="/image/img 4.jpeg" alt="" />
         </div>
       </div>
       <div class="graphic_con">
@@ -94,7 +94,7 @@
           </h6>
         </div>
         <div class="sub_con1">
-          <img src="/image/image22.jpg" alt="" />
+          <img src="\image\mitoms\boliviainteligente-5b9Lr-ggr0E-unsplash.jpg" alt="" />
         </div>
       </div>
       <div class="graphic_con">
@@ -111,7 +111,7 @@
           </h6>
         </div>
         <div class="sub_con1">
-          <img src="/image/image23.jpg" alt="" />
+          <img src="\image\mitoms\jakub-zerdzicki-sKhzb1uyBDU-unsplash.jpg" alt="" />
         </div>
       </div>
     </div>
@@ -130,7 +130,7 @@
           </h6>
         </div>
         <div class="sub_con1">
-          <img src="/image/image31.jpg" alt="" />
+          <img src="\image\mitoms\merakist-l5if0iQfV4c-unsplash.jpg" alt="" />
         </div>
       </div>
       <div class="graphic_con">
@@ -147,26 +147,10 @@
           </h6>
         </div>
         <div class="sub_con1">
-          <img src="/image/image32.jpg" alt="" />
+          <img src="\image\mitoms\alexander-shatov-mr4JG4SYOF8-unsplash.jpg" alt="" />
         </div>
       </div>
-      <div class="graphic_con">
-        <div class="sub_con">
-          <span>
-            <p>03</p>
-            <h5>BUSINESS</h5>
-          </span>
-          <h2>Business & Advertising</h2>
-          <h6>
-            Curae risus sociis ultricies scelerisque libero malesuada primis,
-            ligula aptent morbi enim nisi aenean blandit eu, placerat feugiat
-            sagittis volutpat
-          </h6>
-        </div>
-        <div class="sub_con1">
-          <img src="/image/image33.jpg" alt="" />
-        </div>
-      </div>
+     
     </div>
     <section class="section2">
       <div class="sec32 common_padding">
@@ -208,7 +192,7 @@
           <h6>
             <span class="tick_a"
               ><font-awesome-icon :icon="['fas', 'check']" /></span
-            >500+ Projects Delivered
+            >500+ Projects Delivered.
           </h6>
           <h6>
             <span class="tick_a"
@@ -225,7 +209,7 @@
           <h6>
             <span class="tick_a"
               ><font-awesome-icon :icon="['fas', 'check']" /></span
-            >Global Clientele spanning multiple industries.
+            >Global, Multi-industry Clientele.
           </h6>
         </div>
       </div>
@@ -316,30 +300,34 @@
           </div>
         </div>
         <br />
+        <div class="inner_join">
         <h3>
           "Don’t see your role listed? We’re always on the lookout for great
           talent."
         </h3>
         <button>Submit Your Resume</button>
+      </div>
+        <div class="sec32_con_work">
         <h2>Why Work with Us?</h2>
         <ul>
           <li>
-            <font-awesome-icon :icon="['fas', 'angles-right']" />
+            <span class="icon_right"><font-awesome-icon :icon="['fas', 'angles-right']" /></span>
             Innovative Projects: Work on exciting, cutting-edge digital
             solutions for clients across the globe.
           </li>
           <li>
-            <font-awesome-icon :icon="['fas', 'angles-right']" />
+            <span class="icon_right"><font-awesome-icon :icon="['fas', 'angles-right']" /></span>
             Growth Opportunities: We’re committed to helping our team members
             grow in their careers through continuous learning and skill
             development.
           </li>
           <li>
-            <font-awesome-icon :icon="['fas', 'angles-right']" />
+            <span class="icon_right"><font-awesome-icon :icon="['fas', 'angles-right']" /></span>
             Great Culture: Join a team of passionate, collaborative
             professionals who are dedicated to delivering excellence.
           </li>
         </ul>
+      </div>
       </div>
     </section>
     <section class="common_padding sec42">
@@ -350,6 +338,7 @@
       </h3>
       <div class="sec42_container">
         <div class="sec42_con">
+          <img src="/image/blog1.jpg" alt="">
           <h4>Blog Post 1</h4>
           <p>
             The Future of Web Development: Trends for 2025 As technology
@@ -360,6 +349,7 @@
           <button>Read More</button>
         </div>
         <div class="sec42_con">
+          <img src="/image/blog2.jpg" alt="">
           <h4>Blog Post 2</h4>
           <p>
             The Future of Web Development: Trends for 2025 As technology
@@ -370,6 +360,7 @@
           <button>Read More</button>
         </div>
         <div class="sec42_con">
+          <img src="/image/blog3.jpg" alt="">
           <h4>Blog Post 3</h4>
           <p>
             The Future of Web Development: Trends for 2025 As technology
@@ -393,6 +384,7 @@ export default {
       design: true,
       technology: false,
       business: false,
+      
     };
   },
   methods: {
@@ -416,6 +408,15 @@ export default {
 </script>
 
 <style scoped>
+.active {
+  opacity: 1;
+}
+.icon_right{
+  color: #F96227;
+  margin-right: 1rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
 header {
   display: flex;
   flex-direction: column;
@@ -601,7 +602,7 @@ nav p:hover {
 }
 .sec32_container1 {
   display: flex;
-  gap: 10%;
+  gap: 15%;
   margin-top: 2%;
 }
 .tick_a {
@@ -624,6 +625,26 @@ nav p:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+.sec32_con_work {
+  position: relative;
+  padding: 2%;
+  background-color: #29353e;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.inner_join{
+  padding: 2%;
+  margin: 5% 0;
+}
+.inner_join h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: white;
+  opacity: 0.8;
 }
 .sec32_con h3 {
   font-size: 1.5rem;
@@ -708,7 +729,7 @@ button:hover {
   font-size: 1.5rem;
   font-weight: 700;
   color: black;
-  opacity: 1;
+  opacity: 0.7;
   margin: 3% 0;
 }
 .sec42_con p{
@@ -809,6 +830,46 @@ button:hover {
   }
   .sec42_con{
     width: 100%;
+  }
+  .common_padding {
+    padding: 2%;
+  }
+  .sec32 h2 {
+    font-size: 2rem;
+  }
+  .sec32 h3 {
+    font-size: 1.2rem;
+  }
+  .sec32 h6 {
+    font-size: 1.2rem;
+  }
+  .sec32_con h3 {
+    font-size: 1.2rem;
+  }
+  .sec32_con p {
+    font-size: 1rem;
+  }
+  .sec32_container1{
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .sec32 ul li {
+    font-size: 1rem;
+  }
+  .sec42 h2{
+    font-size: 2rem;
+  }
+  .sec42 h3{
+    font-size: 1rem;
+  } 
+  .sec2 h2 {
+    font-size: 2rem;
+  }
+  .sec2 p {
+    font-size: 1rem;
+  }
+  .tick_a {
+    font-size: 1.2rem;
   }
 }
 </style>

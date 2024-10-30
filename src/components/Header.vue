@@ -27,7 +27,7 @@ a{
     color: white;
 }
 header{
-    /* background-color: #1D2A34; */
+    background-color: #1D2A34;
     display: flex;
     justify-content: space-between;
     align-items: center;
