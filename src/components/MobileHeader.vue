@@ -4,9 +4,9 @@
     <div class="head1">
       <img src="/image/Logo-01.png" alt="" />
     </div>
-    <div class="head2">
-      <span class="icon" @click="togglePopup"><font-awesome-icon :icon="['fas', 'bars']" /></span>
-      
+    <div class="head2" @click="togglePopup">
+      <span class="icon" v-if="!showPopup"><font-awesome-icon :icon="['fas', 'bars']" /></span>
+      <span class="icon" v-if="showPopup"><font-awesome-icon :icon="['fas', 'xmark']" /></span>
     </div>
   </header>
   <div class="popup" v-if="showPopup">

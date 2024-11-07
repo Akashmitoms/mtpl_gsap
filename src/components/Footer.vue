@@ -7,7 +7,7 @@
         <div class="footer_con">
             <h3>Quick Links</h3>
             <ul>
-                <li><span><font-awesome-icon :icon="['fas', 'angles-right']" /></span> Home</li>
+                <li><span><font-awesome-icon :icon="['fas', 'angles-right']" /></span>Home</li>
                 <li><span><font-awesome-icon :icon="['fas', 'angles-right']" /></span>About</li>
                 <li><span><font-awesome-icon :icon="['fas', 'angles-right']" /></span>Services</li>
                 <li><span><font-awesome-icon :icon="['fas', 'angles-right']" /></span>Portfolio</li>

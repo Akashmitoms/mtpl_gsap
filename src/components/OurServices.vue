@@ -1,7 +1,7 @@
 <template>
   <section class="section1">
     <div class="os1">
-      <img src="\image\mitoms\lee-campbell-DtDlVpy-vvQ-unsplash.jpg" alt="" />
+      <img src="\image\mitoms\k15-photos-48jTPkGvP2E-unsplash.jpg" alt="" />
       <div class="os1_con">
         <h1>Innovative IT Solutions for Every Business</h1>
         <p>
@@ -171,7 +171,69 @@
       </div>
     </div>
   </section>
+  <section class="section2">
+    <div class="os4">
+      <h2>Frequently Asked Questions</h2>
+      <div v-for="faq in faqs" :key="faq.id">
+      <div class="os4_con" @click="toggleFaq(faq)">
+        <div class="os4_sub">
+        <h3>{{ faq.question }}</h3>
+        <span class="icons"><font-awesome-icon :icon="faq.open ? 'fa-minus' : 'fa-plus'" /></span>
+      </div>
+        <p v-if="faq.open">{{ faq.answer }}</p>
+      </div>
+    </div>
+    </div>
+  </section>
 </template>
+
+<script>
+export default {
+  name: "OurServices",
+
+  data() {
+    return {
+      faqs:[
+        {
+          id: 1,
+          question: "How long does it take to develop a custom software solution?",
+          answer: "The timeline varies depending on the project’s complexity and requirements. Typically, a basic solution may take 3-6 months, while more advanced solutions could take 9-12 months.",
+          open: false,
+        },
+        {
+          id: 2,
+          question: "What industries do you specialize in?",
+          answer: "We specialize in various sectors including healthcare, finance, e-commerce, and logistics, tailoring solutions to meet industry-specific challenges and standards.",
+          open: false,
+        },
+        {
+          id: 3,
+          question: "What are your security protocols for cloud-based applications?",
+          answer: "We use robust security measures such as data encryption, multi-factor authentication, and regular security audits to ensure data safety and regulatory compliance.",
+          open: false,
+        },
+        {
+          id: 4,
+          question: "How does the project update process work?",
+          answer: "We use agile methodologies and provide regular updates through our project management portal, ensuring transparent communication and collaboration throughout the project lifecycle.",
+          open: false,
+        },
+      ]
+    };
+  },
+  methods:{
+    toggleFaq(faq) {
+      this.faqs.forEach((f) => {
+        if (f.id == faq.id) {
+          f.open = !f.open;
+        } else {
+          f.open = false;
+        }
+      });
+    },
+  }
+};
+</script>
 
 <style scoped>
 .section1 {
@@ -190,8 +252,9 @@ img {
 }
 .os1_con {
   position: absolute;
-  top: 15%;
-  left: 50%;
+  top: 25%;
+  left: 45%;
+  right: 10%;
  /* transform: translate(-50%, -50%); */
   text-align: center;
   color: white;
@@ -368,6 +431,46 @@ span {
   margin-bottom: 0.3rem;
   padding: 0.8rem;
   background-color: #f96227;
+}
+.os4{
+  background-color: #1D2A34;
+  border-radius: 10px;
+  padding: 1% 0;
+}
+.os4 h2{
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 2% 0;
+}
+.os4_con{
+  background-color: #29353E;
+  color: white;
+  width: 75%;
+  border-radius: 10px;
+  margin: 2% auto;
+}
+.os4_con h3{
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 2%;
+}
+.os4_con p{
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding: 2%;
+  opacity: 0.8;
+}
+.os4_sub{
+  display: flex;
+  justify-content: space-between;
+}
+.icons{
+  font-size: 1.5rem;
+  padding: 0.7rem 1rem;
+  margin-right: 3%;
+
 }
 @media screen and (max-width: 1200px) {
   .sec3a {

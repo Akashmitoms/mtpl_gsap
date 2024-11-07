@@ -1,7 +1,7 @@
 <template>
   <section class="section1">
     <div class="ab1">
-      <img src="\image\img 3.png" alt="" />
+      <img src="\image\mitoms\hero 3.jpg" alt="" />
       <div class="ab1_con">
         <h1>
           Welcome to Mitoms Technologies: <br /><span class="span_ab1"
@@ -38,7 +38,7 @@
         </h6>
       </div>
       <div class="sub_con1">
-        <img src="/image/image11.jpg" alt="" />
+        <img src="\image\mitoms\ab11.png" alt=""/>
       </div>
     </div>
     <div class="ab2_b">
@@ -52,7 +52,7 @@
         </h6>
       </div>
       <div class="sub_con1">
-        <img src="/image/image12.jpg" alt="" />
+        <img src="\image\mitoms\ab22.png" alt="" />
       </div>
     </div>
     <div class="ab2">
@@ -80,7 +80,7 @@
         </ul>
       </div>
       <div class="sub_con1">
-        <img src="/image/image11.jpg" alt="" />
+        <img src="\image\mitoms\ab33.png" alt="" />
       </div>
     </div>
   </section>
@@ -457,7 +457,7 @@ img {
         font-weight: 1200;
     }
     .ab1_con p {
-        font-size: 3vw;
+        font-size: 2.8vw;
     }
     .span_ab1 {
         font-size: 4.5vw;
