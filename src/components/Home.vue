@@ -52,6 +52,16 @@
           applications that transform the digital experience
         </p>
       </div>
+      <div class="sec3b">
+        <h2>Our Mission</h2>
+        <h1>Empower Businesses Through Innovative Web and Mobile Solutions</h1>
+        <p>
+          To empower businesses through innovative web and mobile solutions that
+          drive growth, efficiency, and connectivity. By harnessing the power of
+          leading-edge technologies, we deliver custom, user-centric
+          applications that transform the digital experience
+        </p>
+      </div>
       <div class="sec3c">
         <h2>Our Values</h2>
         <h1>
@@ -72,6 +82,7 @@
 <script>
 import HomeComponent from "./HomeComponent.vue";
 import { gsap } from "gsap";
+import { _horizontal } from "gsap/Observer";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
 export default {
@@ -81,24 +92,53 @@ export default {
   },
 
   methods: {
-    sideScroll() {
-      gsap.to(".sec3_container", {
-        transform: "translateX(-120%)",
-        delay: 1,
-        scrollTrigger: {
-          trigger: ".section_pin",
-          markers: true,
-          start: "top 0%",
-          end: "bottom 0%",
-          scrub: 1,
-          pin: true,
-        },
+    // sideScroll() {
+    //   gsap.to(".sec3_container", {
+    //     transform: "translateX(-120%)",
+    //     delay: 1,
+    //     scrollTrigger: {
+    //       trigger: ".section_pin",
+    //       markers: true,
+    //       start: "top 0%",
+    //       end: "bottom 0%",
+    //       scrub: 1,
+    //       pin: true,
+    //     },
+    //   });
+    // },
+    horizontalScroll() {
+      const sec3_container = document.querySelector(".sec3_container");
+      let width = sec3_container.offsetWidth;
+      console.log(width);
+      function getScrollAmount() {
+        let width = sec3_container.scrollWidth;
+        console.log( "scrollAmount", width);
+        return -(width - window.innerWidth);
+      }
+
+      const tween = gsap.to (sec3_container, {
+        x : getScrollAmount(),
+        duration: 3,
+        ease: "none",
       });
-    },
+
+      ScrollTrigger.create({
+        trigger: ".section_pin",
+        start: "top 20%",
+        end: () => `+=${sec3_container.scrollWidth - window.innerWidth}`,
+        pin: true,
+        scrub: 1,
+        invalidateOnRefresh: true,
+        animation: tween,
+        markers: true,
+      })
+    }
+    
   },
   mounted() {
     gsap.registerPlugin(ScrollTrigger);
-    this.sideScroll();
+    // this.sideScroll();
+    this.horizontalScroll();
   },
 };
 </script>
@@ -183,7 +223,7 @@ img {
 .sec3a,
 .sec3b,
 .sec3c {
-  width: 99vw;
+  width: 100%;
   padding: 7% 1% 2% 5%;
   margin: 1%;
   border-radius: 20px;
