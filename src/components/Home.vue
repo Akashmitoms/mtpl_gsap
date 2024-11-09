@@ -20,12 +20,12 @@
       </div>
       <div class="v_line"></div>
       <div class="sec_head">
-        <img class="image" src="/image/graphics-design.png" alt="" />
+        <img class="image" src="\image\icons\icons8-circuit-100.png" alt="" />
         <h2>TECHNOLOGY</h2>
       </div>
       <div class="v_line"></div>
       <div class="sec_head">
-        <img class="image" src="/image/social-media.png" alt="" />
+        <img class="image" src="\image\icons\icons8-marketing-100.png" alt="" />
         <h2>MARKETING</h2>
       </div>
     </container>
@@ -40,16 +40,6 @@
           everyone, regardless of background or business size. We aim to drive
           digital transformation by providing innovative and tailored solutions
           that help people and businesses unlock their full potential.
-        </p>
-      </div>
-      <div class="sec3b">
-        <h2>Our Mission</h2>
-        <h1>Empower Businesses Through Innovative Web and Mobile Solutions</h1>
-        <p>
-          To empower businesses through innovative web and mobile solutions that
-          drive growth, efficiency, and connectivity. By harnessing the power of
-          leading-edge technologies, we deliver custom, user-centric
-          applications that transform the digital experience
         </p>
       </div>
       <div class="sec3b">
@@ -167,7 +157,6 @@ img {
   height: 100%;
   object-fit: cover;
   border-radius: 20px;
-  z-index: -1;
 }
 .sec1_con {
   position: absolute;
@@ -223,19 +212,29 @@ img {
 .sec3a,
 .sec3b,
 .sec3c {
-  width: 100%;
+  width: 98%;
   padding: 7% 1% 2% 5%;
   margin: 1%;
   border-radius: 20px;
+  flex-shrink: 0;
+}
+.sec3a{
+  background-color: whitesmoke;
+  border: 1vw solid rgb(229, 228, 228);
 }
 .sec3b {
   background-color: #1d2a34;
+  color: white;
+  border: 1vw solid #0d1e2b;
 }
 .sec3c {
   background-color: #f96227;
+  color: white;
+  border: 1vw solid #f85210;
 }
 .sec3_container {
   display: flex;
+  
 }
 .sec3_container h2 {
   font-size: 1.8rem;
@@ -253,6 +252,7 @@ img {
   font-size: 1.5rem;
   font-weight: 500;
   opacity: 0.8;
+  margin-bottom: 2%;
 }
 @media screen and (max-width: 1200px) and (min-width: 701px) {
   .sec_head h2 {
@@ -260,7 +260,7 @@ img {
     font-weight: 500;
   }
   .image {
-    width: 50px;
+    width: 45px;
     padding: 0.5rem;
   }
 }

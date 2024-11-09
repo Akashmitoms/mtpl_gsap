@@ -10,6 +10,7 @@
       <p :class="{active: business}" @click="activeBusiness">BUSINESS</p>
     </nav>
     <div class="graphic_container" v-if="design">
+      <section class="section_vert_scroll">
       <div class="graphic_con">
         <div class="sub_con">
           <span>
@@ -27,6 +28,8 @@
           <img src="/image/img 1.png" alt="" />
         </div>
       </div>
+    </section>
+    <section class="section_vert_scroll">
       <div class="graphic_con">
         <div class="sub_con">
           <span>
@@ -44,6 +47,8 @@
           <img src="\image\mitoms\pete-pedroza-xITnxxlzGAE-unsplash.jpg" alt="" />
         </div>
       </div>
+    </section>
+    <section class="section_vert_scroll">
       <div class="graphic_con">
         <div class="sub_con">
           <span>
@@ -61,8 +66,10 @@
           <img src="/image/img 3.png" alt="" />
         </div>
       </div>
+    </section>
     </div>
     <div class="graphic_container" v-if="technology">
+      <section class="section_vert_scroll">
       <div class="graphic_con">
         <div class="sub_con">
           <span>
@@ -80,6 +87,8 @@
           <img src="/image/img 4.jpeg" alt="" />
         </div>
       </div>
+    </section>
+    <section class="section_vert_scroll">
       <div class="graphic_con">
         <div class="sub_con">
           <span>
@@ -97,6 +106,8 @@
           <img src="\image\mitoms\boliviainteligente-5b9Lr-ggr0E-unsplash.jpg" alt="" />
         </div>
       </div>
+    </section>
+    <section class="section_vert_scroll">
       <div class="graphic_con">
         <div class="sub_con">
           <span>
@@ -114,8 +125,10 @@
           <img src="\image\mitoms\jakub-zerdzicki-sKhzb1uyBDU-unsplash.jpg" alt="" />
         </div>
       </div>
+    </section>
     </div>
     <div class="graphic_container" v-if="business">
+      <section class="section_vert_scroll">
       <div class="graphic_con">
         <div class="sub_con">
           <span>
@@ -133,6 +146,8 @@
           <img src="\image\mitoms\merakist-l5if0iQfV4c-unsplash.jpg" alt="" />
         </div>
       </div>
+    </section>
+    <section class="section_vert_scroll">
       <div class="graphic_con">
         <div class="sub_con">
           <span>
@@ -150,7 +165,7 @@
           <img src="\image\mitoms\alexander-shatov-mr4JG4SYOF8-unsplash.jpg" alt="" />
         </div>
       </div>
-     
+    </section>
     </div>
     <section class="section2">
       <div class="sec32 common_padding">
@@ -403,11 +418,54 @@ export default {
       this.technology = false;
       this.business = true;
     },
+    verticalScroll(){
+      console.clear();
+
+gsap.registerPlugin(ScrollTrigger);
+
+const images = gsap.utils.toArray(".graphic_con");
+
+const imagesTl = gsap.timeline({
+  defaults: {
+    ease: "none"
+  },
+  scrollTrigger: {
+    trigger: ".graphic_container",
+    pin: true,
+    start: "top top",
+    end: `+=${images.length * 100}%`,
+    markers: true,
+    scrub: true
+  }
+});
+
+images.forEach((image, i) => {
+  if (i) {
+    imagesTl.to(image, {
+      clipPath: "polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)"
+    });
+  }
+});
+    }
   },
 };
 </script>
 
 <style scoped>
+.graphic_container{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+.section_vert_scroll{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+}
 .active {
   opacity: 1;
 }
@@ -465,6 +523,10 @@ nav p:hover {
   justify-content: space-between;
   padding: 2% 5% 5% 10%;
   gap: 5%;
+
+  width: 100%;
+    height: 100%;
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
 }
 .sub_con {
   width: 50%;
